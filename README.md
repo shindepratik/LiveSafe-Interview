@@ -11,9 +11,9 @@ To get started and submit your work.
 
 * Clone this project from this private repository Complete the assignment as instructed in
 
-[Front-End](assignment/README.md)
+[Front-End](frontend/README.md)
 
-[Back-End](assignment/README.md)
+[Back-End](backend/README.md)
 
 * When ready to submit create a patch of your work. (Ex: git diff origin/master master > mypatch.patch)
 
