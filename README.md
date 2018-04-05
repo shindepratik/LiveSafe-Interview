@@ -9,11 +9,9 @@ what you would do next, given more time.
 
 To get started and submit your work.
 
-* Clone this project from this private repository Complete the assignment as instructed in
+* Clone this project from this private repository and complete the assignment as instructed in
 
-[Front-End](frontend/README.md)
-
-[Back-End](backend/README.md)
+[Assignment.md](Assignment.md)
 
 * When ready to submit create a patch of your work. (Ex: git diff origin/master master > mypatch.patch)
 
