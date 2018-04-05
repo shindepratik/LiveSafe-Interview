@@ -2,11 +2,11 @@ import { NgModule, SkipSelf, Optional } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 
-import { HackerNewsService } from './hacker-news.service';
+import { NewsService } from './news.service';
 
 @NgModule({
   imports: [CommonModule, HttpClientModule],
-  providers: [HackerNewsService]
+  providers: [NewsService]
 })
 export class CoreModule {
   constructor(

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { HackerNewsService, NewsItem } from '../core';
+import { NewsService, NewsItem } from '../core';
 
 @Component({
   selector: 'app-home',
@@ -19,7 +19,7 @@ export class HomeComponent implements OnInit {
   loading = false;
   news: NewsItem[] = [];
 
-  constructor(private hn: HackerNewsService) {}
+  constructor(private hn: NewsService) {}
 
   ngOnInit() {
     this.loading = true;

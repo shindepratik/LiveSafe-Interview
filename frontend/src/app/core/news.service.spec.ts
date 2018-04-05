@@ -2,19 +2,19 @@ import { TestBed, inject } from '@angular/core/testing';
 import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
 
 import { NewsItem } from './news-item.interface';
-import { HackerNewsService, HnApi } from './hacker-news.service';
+import { NewsService, API } from './news.service';
 
-describe('HackerNewsService', () => {
-  let service: HackerNewsService;
+describe('NewsService', () => {
+  let service: NewsService;
   let httpMock: HttpTestingController;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
       imports: [HttpClientTestingModule],
-      providers: [HackerNewsService]
+      providers: [NewsService]
     });
 
-    service = TestBed.get(HackerNewsService);
+    service = TestBed.get(NewsService);
     httpMock = TestBed.get(HttpTestingController);
   });
 
@@ -38,7 +38,7 @@ describe('HackerNewsService', () => {
       expect(news as Partial<NewsItem>[]).toEqual(sampleNews);
     });
 
-    const req = httpMock.expectOne(HnApi);
+    const req = httpMock.expectOne(API);
 
     expect(req.request.method).toBe('GET');
 

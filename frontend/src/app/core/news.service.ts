@@ -4,13 +4,13 @@ import { Observable } from 'rxjs/Observable';
 
 import { NewsItem } from './news-item.interface';
 
-export const HnApi = 'https://node-hnapi.herokuapp.com/news';
+export const API = '/some-endpoint';
 
 @Injectable()
-export class HackerNewsService {
+export class NewsService {
   constructor(private http: HttpClient) {}
 
   getNews(): Observable<NewsItem[]> {
-    return this.http.get<NewsItem[]>(HnApi);
+    return this.http.get<NewsItem[]>(API);
   }
 }
