@@ -10,13 +10,13 @@ This assignment requires node >= 8.0.0 and npm >= 5.5
 ### Clone the project - 
 
 ```
-git clone https://github.com/shindepratik/lvsf-pratik.git
+git clone https://github.com/shindepratik/LiveSafe-Interview.git
 ```
 
 ### Start the server - 
 
 ```
-cd lvsf-pratik/backend
+cd LiveSafe-Interview/backend
 npm install
 npm start
 [do this only if console shows nodemon found error] npm install nodemon
@@ -25,7 +25,7 @@ npm start
 ### Start the app - 
 
 ```
-cd lvsf-pratik/frontend
+cd LiveSafe-Interview/frontend
 npm install
 npm start
 [do this only if console shows nodemon found error] npm install nodemon
