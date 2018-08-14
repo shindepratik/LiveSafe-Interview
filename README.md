@@ -1,18 +1,53 @@
-# LiveSafe Full Stack Assignment
+# LiveSafe Full Stack Assignment:
 
-The purpose of this is to get a small sample of some of your work, and have something
-concrete to discuss next time we see you.
+Your goal is to complete a simple full-stack application. Most of the frontend is written already, and your task is to implement the search functionality, as well as connect the feed to a real backend.
 
-We respect and appreciate your time: please do not spend more than a couple hours on
-this. Feel free to turn in what you have at the end of that time, and provide a brief explanation of
-what you would do next, given more time.
+## Installation: 
+```
+This assignment requires node >= 8.0.0 and npm >= 5.5
+```
 
-To get started and submit your work.
+### Clone the project - 
 
-* Clone this project from this private repository and complete the assignment as instructed in
+```
+git clone https://github.com/shindepratik/lvsf-pratik.git
+```
 
-[Assignment.md](Assignment.md)
+### Start the server - 
 
-* When ready to submit create a patch of your work. (Ex: git diff origin/master master > mypatch.patch)
+```
+cd lvsf-pratik/backend
+npm install
+npm start
+[do this only if console shows nodemon found error] npm install nodemon
+```
 
-* Email the mypatch.patch file back to the LiveSafe staff that sent the assignment
+### Start the app - 
+
+```
+cd lvsf-pratik/frontend
+npm install
+npm start
+[do this only if console shows nodemon found error] npm install nodemon
+```
+
+Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
+A few minor tweaks were made to some of the original files in the frontend folder in order to fulfill the requirements of the assignment. 
+The following files were tweaked in the frontend folder - 
+
+* home.component.ts
+* news.service.ts
+* feed-card.component.ts
+
+## Provided more time, what I would have done next: 
+
+1. Provided an option to filter search results based on either title, user, URL or a combination of any of those options. 
+2. Since there is an endpoint to create an entry, would have created an RSS feed for subscribers to get notified when any new entry is made. 
+3. Added comments section, sharing option on social media and an option to upvote/downvote an article. 
+4. Tweaked the frontend to make it look more vibrant and welcoming.
+
+
+## Running unit tests
+
+Run `npm test` to execute the unit tests via [Karma](https://karma-runner.github.io).
