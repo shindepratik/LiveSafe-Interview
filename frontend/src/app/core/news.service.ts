@@ -4,7 +4,9 @@ import { Observable } from 'rxjs/Observable';
 
 import { NewsItem } from './news-item.interface';
 
-export const API = '/some-endpoint';
+/* Added backend API */
+
+export const API = 'http://localhost:3000/data/';
 
 @Injectable()
 export class NewsService {
@@ -14,3 +16,4 @@ export class NewsService {
     return this.http.get<NewsItem[]>(API);
   }
 }
+
